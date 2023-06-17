@@ -1,3 +1,2 @@
 Dataset/creditcard.csv
-fraud_torch.ipynb
-Models/Torch
+Models/Autoencoder/hyperband
