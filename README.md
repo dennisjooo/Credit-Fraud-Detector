@@ -13,17 +13,13 @@ Payment card fraud is an ongoing major issue in the financial industry, causing 
 
 Nowadays, the design of payment card fraud detection techniques rely on the use of unsupervised machine learning studying an imbalanced dataset uncovering patterns and outliers.
 
+We compared three unsupervised-learning models, namely K-Means Clustering, Gaussian Mixture, and AutoEncoder, in predicting transaction fraud. The idea of this project is to train each model with "clean" dataset which we have an abundance of and tune it to detect "novelties" which in this context are the fraudulent transactions.
+
 ## Dataset
 
 Taken from [Lopez-Rojas's Paysim dataset](https://www.kaggle.com/datasets/ealaxi/paysim1). It contains 6 million transactions, with 11 features. The dataset is highly imbalanced, with only 0.13% of the transactions being fraudulent.
 
 ## Brief Results
-
-We compared three methods, namely:
-
-- K-Means Clustering
-- Gaussian Mixture
-- AutoEncoder
 
 The AutoEncoder method outperformed the other two methods with an AUC of 0.93. The reconstruction threshold was tuned to maximize the F1 score, which was 0.86.
 
